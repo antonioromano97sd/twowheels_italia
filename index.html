@@ -2,59 +2,71 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Two Wheels Italia - Coming Soon</title>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coming Soon - Two Wheels Italia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0e6e6df.js" crossorigin="anonymous"></script>
   <style>
     body {
       margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background: linear-gradient(135deg, #000000, #1a1a1a);
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      color: white;
+      background: url('https://images.unsplash.com/photo-1611004060409-0e03df639686?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+      background-size: cover;
       height: 100vh;
-      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      padding: 0 20px;
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.6);
+      background-blend-mode: darken;
     }
 
     h1 {
       font-family: 'Anton', sans-serif;
-      font-size: 3em;
-      margin-bottom: 0.5em;
-      letter-spacing: 2px;
+      font-size: 4rem;
+      margin-bottom: 1rem;
     }
 
     p {
+      font-size: 1.2rem;
       max-width: 600px;
-      font-size: 1.2em;
-      margin-bottom: 2em;
+      margin-bottom: 2rem;
     }
 
-    .coming-soon {
-      font-size: 1.1em;
-      letter-spacing: 1px;
+    .insta-link {
+      font-size: 1.1rem;
+      color: #fff;
+      text-decoration: none;
+      background-color: rgba(255, 255, 255, 0.1);
       padding: 10px 20px;
-      border: 2px solid #fff;
       border-radius: 30px;
-      animation: pulse 2s infinite;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: background-color 0.3s ease;
     }
 
-    @keyframes pulse {
-      0% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.7; transform: scale(1.05); }
-      100% { opacity: 1; transform: scale(1); }
+    .insta-link:hover {
+      background-color: #e4405f;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
   <h1>Two Wheels Italia</h1>
-  <p>
-    Stiamo scaldando i motori!<br />
-    Presto online con tante novità: uscite in moto, eventi esclusivi, corsi di guida in pista e molto altro.
-  </p>
-  <div class="coming-soon">🚧 Coming Soon 🚀</div>
+  <p>Stiamo per arrivare! Uscite in moto, eventi, corsi di guida in pista e molto altro.</p>
+  <a href="https://www.instagram.com/twowheels_italia" class="insta-link" target="_blank">
+    <i class="fab fa-instagram"></i> Seguici su Instagram
+  </a>
+  <div class="footer">© 2025 Two Wheels Italia</div>
 </body>
 </html>
